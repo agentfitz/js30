@@ -1,0 +1,86 @@
+
+/* basic reset */
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* app block */
+.app {
+	background: url("../img/graffiti.jpg");
+	background-size: cover;
+}
+
+.app::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	z-index: -1;
+}
+
+/* dancer block */
+.dancer {
+	position: absolute;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-150%);
+	display: none;
+}
+
+.app--is-playing .dancer {
+	display: block;
+}
+
+/* drum-machine block */
+.drum-machine {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.drum-machine__pads {
+	margin: -20px 0 0 -20px;
+}
+
+.drum-machine__pad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 60px;
+	background: teal;
+	padding: 10px;
+	margin: 20px 0 0 20px;
+	height: 65px;
+	width: 65px;
+	border-radius: 3px;
+	float: left;
+	font-family: monospace;
+	background: rgba(200,200,200,.7);
+	border: 1px solid #fff;
+	cursor: pointer;
+	user-select: none;
+	transition: all .1s;
+}
+
+.drum-machine__pad--is-playing {
+	border-color: red;
+	transform: scale(1.1);
+}
+
+.drum-machine__pad-key {
+	font-size: 40px;
+	color: #fff;
+}
+
+.drum-machine__pad-name {
+	font-size: 12px;
+	color: #fff;
+}
