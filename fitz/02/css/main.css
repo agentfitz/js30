@@ -1,0 +1,68 @@
+
+.app {
+	background: url("../img/classroom.jpg");
+	background-size: cover;
+}
+
+.app::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.3);
+	z-index: -1;
+}
+
+.clock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 500px;
+	width: 500px;
+	background: url("../img/clock.png");
+	background-size: cover;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.clock::before {
+	content: "";
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #555;
+	display: block;
+	border: 1px solid #333;
+}
+
+.clock__hour-hand,
+.clock__minute-hand,
+.clock__second-hand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 5px;
+	background: black;
+	transform: rotate(-90deg);
+	transform-origin: 0%;
+}
+
+.clock__hour-hand {
+	width: 20%;
+}
+
+.clock__minute-hand {
+	width: 29%;
+}
+
+.clock__second-hand {
+	width: 31%;
+	background: #c71e1e;
+	height: 2px;
+}
