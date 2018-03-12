@@ -1,0 +1,51 @@
+html{
+    height:100%;
+}
+body{
+    background-image: url('images/main.jpg');
+    font-family: 'Fugaz One', cursive;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+.title{
+    text-align: center;
+    font-size: 55px;
+    color: #bec1cb;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 3px;
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
+}
+.button__key{
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.button__sound{
+    color: #d79841;;
+    margin-bottom: 0;
+}
+.button--active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #f3f341;
+    border-radius: 3px;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
