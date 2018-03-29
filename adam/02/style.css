@@ -4,10 +4,6 @@ html, body{
     background-color: #4286f4;
 }
 .app{
-    /* display: flex;
-    align-self: center;
-    margin-top: 15%;
-    justify-content: center; */
     width: 30rem;
     height: 30rem;
     border: 10px solid white;
@@ -17,14 +13,9 @@ html, body{
     padding: 2rem;
 }
 .clock{
-    /* width: 250px;
-    height: 250px;
-    border: 10px solid white;
-    border-radius: 50%; */
     position: relative;
     width: 100%;
     height: 100%;
-    /* padding:10px; */
 }
 .hand{
     position: absolute;
